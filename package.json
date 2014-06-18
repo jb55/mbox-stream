@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "debug": "^1.0.2",
+    "epipebomb": "^0.1.1",
     "mailparser": "^0.4.4",
     "split": "^0.3.0",
     "stream-combiner": "^0.2.1",

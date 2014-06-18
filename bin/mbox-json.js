@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+require('epipebomb')();
 var parser = require('../');
 var through = require("through2").obj;
 
