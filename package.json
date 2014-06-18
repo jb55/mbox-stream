@@ -1,0 +1,32 @@
+{
+  "name": "mbox-stream",
+  "description": "Streaming mbox parser",
+  "keywords": [
+    "mbox",
+    "stream"
+  ],
+  "bin": {
+    "mbox-json": "./bin/mbox-json.js"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jb55/mbox-stream.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "debug": "^1.0.2",
+    "mailparser": "^0.4.4",
+    "split": "^0.3.0",
+    "stream-combiner": "^0.2.1",
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "expect.js": "*",
+    "mocha": "*",
+    "stream-reduce": "^1.0.3"
+  }
+}
