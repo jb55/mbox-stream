@@ -13,6 +13,10 @@ var exports = module.exports = function(opts) {
   return compose(
     split(/[^>]From\s/),
     through(function(chunk, enc, done){
+      chunk = chunk.toString()
+      if (!/^From\s/.test(chunk))
+        chunk = "From " + chunk
+      debug("chunk %s", chunk)
       var self = this;
       var parser = newParser();
       parser.on('end', function(mail){
