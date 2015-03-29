@@ -14,6 +14,12 @@
     "url": "git://github.com/jb55/mbox-stream.git"
   },
   "main": "index.js",
+  "files": [
+    "inbox.js",
+    "package.json",
+    "bin/mbox-json.js",
+    "Readme.md"
+  ],
   "scripts": {
     "test": "mocha --reporter spec"
   },
