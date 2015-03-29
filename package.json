@@ -8,7 +8,7 @@
   "bin": {
     "mbox-json": "./bin/mbox-json.js"
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/jb55/mbox-stream.git"
