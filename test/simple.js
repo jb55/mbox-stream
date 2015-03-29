@@ -31,16 +31,16 @@ describe('mbox stream parser', function(){
   });
 
   // I'm not sure if these newline tests are right
-  it('has newline at end of message', function(){
-    expect(mails[0].html).to.be("My message\n");
+  it('doesnt have newline at end of message', function(){
+    expect(mails[0].html).to.be("My message From derp\n>From");
   });
 
   it('second has newline at end of message', function(){
-    expect(mails[1].html).to.be("From My message 2\n");
+    expect(mails[1].html).to.be("From My message 2");
   });
 
   it('has two', function(){
-    expect(mails.length).to.be(2);
+    expect(mails.length).to.be(3);
   });
 
   it('doesnt strip From at start', function(){

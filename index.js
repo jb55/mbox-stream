@@ -7,11 +7,11 @@ var through    = require('through2').obj;
 
 var exports = module.exports = function(opts) {
   opts = opts || {};
-  var newParser = opts.mailParser || function(){ 
+  var newParser = opts.mailParser || function(){
     return new MailParser({ streamAttachments: true });
   };
   return compose(
-    split(/[^>]From\s/),
+    split(/\n[^>]From\s/),
     through(function(chunk, enc, done){
       chunk = chunk.toString()
       if (!/^From\s/.test(chunk))
