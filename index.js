@@ -8,7 +8,7 @@ var through    = require('through2').obj;
 var exports = module.exports = function(opts) {
   opts = opts || {};
   var newParser = opts.mailParser || function(){
-    return new MailParser({ streamAttachments: true });
+    return new MailParser();
   };
   return compose(
     split(/\n[^>]From\s/),
